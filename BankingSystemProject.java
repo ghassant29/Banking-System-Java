@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package banking.system.project;
+import java.util.Scanner;
 
 /**
  *
@@ -21,6 +22,15 @@ public class BankingSystemProject {
         int previousTransaction;
         String customerName;
         String customerId;
+
+            public BankAccount(int balance, int previousTransaction, String customerName, String customerId) {
+                this.balance = balance;
+                this.previousTransaction = previousTransaction;
+                this.customerName = customerName;
+                this.customerId = customerId;
+            }
+        
+        
         public void deposit (int amount){
         if (amount!=0){balance =balance +amount;
         previousTransaction=amount;}}
@@ -34,6 +44,21 @@ public class BankingSystemProject {
              else if(previousTransaction<0){System.out.println("Withdrawed"+previousTransaction);}
              else{System.out.println("No Transaction Occured");}
              }
+              
+              void showMenu() {
+		
+		char option = '\0';
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Welcome " +customerName);
+		System.out.println("Your ID is " +customerId);
+		System.out.println("\n");
+		
+		System.out.println("A : Check Your Balance");
+		System.out.println("B : Deposit");
+		System.out.println("C : Withdraw");
+		System.out.println("D : Previous Transaction");
+		System.out.println("E : Exit The System");
         
         
     }
