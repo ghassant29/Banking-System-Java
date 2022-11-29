@@ -16,16 +16,18 @@ public class BankingSystemProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        BankAccount obj = new BankAccount("Ghassan Turk","202201847");
+        obj.showMenu();}}
         // TODO code application logic here
         class BankAccount{
         int balance;
         int previousTransaction;
         String customerName;
         String customerId;
+        
 
-            public BankAccount(int balance, int previousTransaction, String customerName, String customerId) {
-                this.balance = balance;
-                this.previousTransaction = previousTransaction;
+            public BankAccount(String customerName, String customerId) {
+                
                 this.customerName = customerName;
                 this.customerId = customerId;
             }
@@ -117,4 +119,4 @@ public class BankingSystemProject {
         
     }
     
-}}
+
