@@ -16,6 +16,12 @@ public class BankingSystemProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        class BankAccount{
+        int balance;
+        int previousTransaction;
+        String customerName;
+        String customerId;
+        }
     }
     
 }
