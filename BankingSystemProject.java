@@ -22,8 +22,16 @@ public class BankingSystemProject {
         String customerName;
         String customerId;
         public void deposit (int amount){
-        if (amount!=0){balance =balance +amount;}}
+        if (amount!=0){balance =balance +amount;
+        previousTransaction=amount;}}
+        
+        
+        public void withdraw (int amount){
+             if (amount!=0){balance =balance -amount;
+        previousTransaction=-amount;
         }
+        }
+        
     }
     
-}
+}}
