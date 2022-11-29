@@ -21,6 +21,8 @@ public class BankingSystemProject {
         int previousTransaction;
         String customerName;
         String customerId;
+        public void deposit (int amount){
+        if (amount!=0){balance =balance +amount;}}
         }
     }
     
