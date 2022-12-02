@@ -32,5 +32,12 @@ public class Stack {
             transactionLogs[currentNumber] = null;
             return temp;
         }
+         public void Push(Transaction transaction){
+            if(isFull()){
+                expand();
+            }
+            transactionLogs[currentNumber] = transaction;
+            currentNumber++;
+        }
     
 }
