@@ -17,6 +17,8 @@ public class Stack {
         transactionLogs = new Transaction [20];
         this.currentNumber = 0;
     }
-    
+     public boolean isEmpty(){
+            return currentNumber == 0;
+        }
     
 }
