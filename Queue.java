@@ -24,5 +24,10 @@ public class Queue {
     }
     return false;
   }
-    
+     boolean isEmpty() {
+    if (front == -1)
+      return true;
+    else
+      return false;
+  }
 }
