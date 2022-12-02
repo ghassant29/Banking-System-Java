@@ -74,5 +74,24 @@ public class Queue {
       return (element);
     }
   }
+      void display() {
+    int i;
+    if (isEmpty()) {
+      System.out.println("Empty Queue");
+    }
+    else {
+     
+      System.out.println("\nFront index-> " + front);
+
+  
+      System.out.println("Items -> ");
+      for (i = front; i <= rear; i++)
+        System.out.print(items[i] + "  ");
+
+
+      System.out.println("\nRear index-> " + rear);
+    }
+  }
+
 
 }
