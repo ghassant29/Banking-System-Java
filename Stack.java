@@ -20,5 +20,8 @@ public class Stack {
      public boolean isEmpty(){
             return currentNumber == 0;
         }
+       public boolean isFull(){
+            return currentNumber == transactionLogs.length;
+        }
     
 }
