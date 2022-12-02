@@ -30,4 +30,23 @@ public class Queue {
     else
       return false;
   }
+     void enQueue(int element) {
+
+    
+    if (isFull()) {
+      System.out.println("Queue is full");
+    }
+    else {
+      if (front == -1) {
+        
+        front = 0;
+      }
+
+      rear++;
+     
+      items[rear] = element;
+      System.out.println("Insert " + element);
+    }
+  }
+
 }
