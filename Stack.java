@@ -23,5 +23,14 @@ public class Stack {
        public boolean isFull(){
             return currentNumber == transactionLogs.length;
         }
+        public int Size(){
+            return currentNumber;
+        }
+        public Transaction Pop(){
+            this.currentNumber--;
+             Transaction temp = transactionLogs[currentNumber];
+            transactionLogs[currentNumber] = null;
+            return temp;
+        }
     
 }
