@@ -10,5 +10,13 @@ package banking.system.project;
  * @author GASS
  */
 public class Stack {
+    Transaction [] transactionLogs;
+    int currentNumber;
+
+    public Stack(Transaction[] transactionLogs, int currentNumber) {
+        transactionLogs = new Transaction [20];
+        this.currentNumber = 0;
+    }
+    
     
 }
