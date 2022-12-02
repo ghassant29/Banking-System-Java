@@ -48,5 +48,31 @@ public class Queue {
       System.out.println("Insert " + element);
     }
   }
+     
+      int deQueue() {
+    int element;
+
+    
+    if (isEmpty()) {
+      System.out.println("Queue is empty");
+      return (-1);
+    }
+    else {
+      
+      element = items[front];
+
+     
+      if (front >= rear) {
+        front = -1;
+        rear = -1;
+      }
+      else {
+      
+        front++;
+      }
+      System.out.println( element + " Deleted");
+      return (element);
+    }
+  }
 
 }
